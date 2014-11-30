@@ -11,6 +11,7 @@ class FixturizerTest extends PHPUnit_Framework_TestCase {
      */
     public function should_save_as_yaml()
     {
+        $this->cleanUpFile();
         $fixturizer = new Writer();
         $path = __DIR__ . '/tmp/';
         $fixturizer->setDestination($path)->setName('foo.yml');
@@ -25,13 +26,40 @@ class FixturizerTest extends PHPUnit_Framework_TestCase {
     /**
      * @test
      */
+    public function shortcut_to_set_name_and_no_path_for_write()
+    {
+        $fixturizer = new Writer();
+        $path = __DIR__ . '/tmp/';
+        $fixturizer->setDestination($path)->setName('foo.yml');
+        $this->assertFileNotExists($fixturizer->getDestination() . 'foo.yml');
+        $fixturizer->createFixture($this->getFixtureSampleArray(), 'foo.yml');
+        $this->assertFileExists($fixturizer->getDestination() . 'foo.yml');
+    }
+
+    /**
+     * @test
+     */
     public function should_read_file_and_make_into_php_array()
     {
         $this->setUpFixtureYml();
         $fixturizer = new Reader();
-        $path = __DIR__ . "/tmp/foo.yml";
-        $fixturizer->setSourceFolderAndFileName($path);
+        $path = __DIR__ . "/tmp/";
+        $fixturizer->setBaseFixtureStoragePath($path);
+        $fixturizer->setName('foo.yml');
         $fixturizer->convertYmlToArray();
+        $result = $fixturizer->getContentArray();
+        $this->assertArrayHasKey('foo', $result);
+    }
+
+    /**
+     * @test
+     */
+    public function shortcut_to_set_name_and_no_path_for_read()
+    {
+        $this->setUpFixtureYml();
+        $fixturizer = new Reader();
+        $path = __DIR__ . "/tmp/";
+        $fixturizer->getFixture('foo.yml', $path);
         $result = $fixturizer->getContentArray();
         $this->assertArrayHasKey('foo', $result);
     }
@@ -44,8 +72,10 @@ class FixturizerTest extends PHPUnit_Framework_TestCase {
     {
         $this->setUpFixtureYml();
         $fixturizer = new Reader();
-        $path = __DIR__ . "/foobarland/foo.yml";
-        $fixturizer->setSourceFolderAndFileName($path);
+        $path = __DIR__ . "/foobarland/";
+        $name = 'foo.yml';
+        $fixturizer->setBaseFixtureStoragePath($path);
+        $fixturizer->setName($name);
         $fixturizer->convertYmlToArray();
         $result = $fixturizer->getContentArray();
         $this->assertArrayHasKey('foo', $result);
@@ -87,11 +117,16 @@ HEREDOC;
 
     public function tearDown()
     {
+        $this->cleanUpFile();
+    }
+
+    protected function cleanUpFile()
+    {
         $path = __DIR__ . '/tmp/';
+
         if(file_exists($path . "foo.yml"))
         {
             unlink($path . "foo.yml");
         }
     }
-
 } 

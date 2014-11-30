@@ -27,18 +27,28 @@ class Writer extends BaseParser {
         return $this->destination;
     }
 
-    public function createFixture(array $content)
+
+    public function createFixture(array $content, $name = false)
     {
         $this->content = $content;
+
+        ($name != false) ? $this->setName($name) : false;
+
         $this->convert();
         $this->write();
     }
 
     protected function write()
     {
+
         if(!$this->getFilesystem()->exists($this->getDestination()))
         {
             throw new MissingFileException(sprintf("Can not write file since folder does not exist %s", $this->getDestination()));
+        }
+
+        if($this->getName() == NULL)
+        {
+            throw new MissingNameException("You need to setName prior to using");
         }
 
         try

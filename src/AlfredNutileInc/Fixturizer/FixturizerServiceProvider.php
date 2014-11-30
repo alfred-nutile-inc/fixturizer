@@ -1,6 +1,9 @@
 <?php namespace AlfredNutileInc\Fixturizer;
 
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Yaml\Yaml;
 
 class FixturizerServiceProvider extends ServiceProvider {
 
@@ -11,6 +14,14 @@ class FixturizerServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+    /**
+     * Booting
+     */
+    public function boot()
+    {
+        $this->package('alfred-nutile-inc/fixturizer');
+    }
+
 	/**
 	 * Register the service provider.
 	 *
@@ -18,7 +29,20 @@ class FixturizerServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app->bind('fixturize.writer', function($app, $name) {
+            
+            $fixturize = new Writer(new Filesystem());
+            $path = Config::get('fixturizer::config.fixture_storage_folder');
+            $fixturize->setDestination($path . '/');
+            $fixturize->setYmlParser(new Yaml());
+            return $fixturize;
+        });
+
+        $this->app->bind('fixturize.reader', function($app) {
+            $fixturize = new Reader(new Filesystem());
+            $fixturize->setYmlParser(new Yaml());
+            return $fixturize;
+        });
 	}
 
 	/**
@@ -28,7 +52,7 @@ class FixturizerServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('fixturize.reader', 'fixturize.writer');
 	}
 
 }

@@ -12,30 +12,32 @@ namespace AlfredNutileInc\Fixturizer;
 class Reader extends BaseParser {
 
     protected $content_array;
-    protected $source_folder_and_file_name;
-
-    public function setSourceFolderAndFileName($path_filename)
-    {
-        $this->source_folder_and_file_name = $path_filename;
-        return $this;
-    }
 
     /**
+     *
+     * Shortcut to use class with Facade
+     * @param bool $file_name
+     * @param bool $path
      * @return mixed
+     * @throws MissingFileException
+     * @throws \Exception
      */
-    public function getSourceFolderAndFileName()
+    public function getFixture($file_name = false, $path = false)
     {
-        return $this->source_folder_and_file_name;
+        ($file_name != false) ? $this->setName($file_name) : false;
+        ($path != false) ? $this->setBaseFixtureStoragePath($path) : false;
+        $this->convertYmlToArray();
+        return $this->getContentArray();
     }
 
     public function convertYmlToArray()
     {
-        if(!$this->getFilesystem()->exists($this->getSourceFolderAndFileName()))
+        if(!$this->getFilesystem()->exists($this->getBaseFixtureStoragePath() . $this->getName()))
             throw new MissingFileException("Please Make sure the folder or file exists");
 
         try
         {
-            $results = $this->getYmlParser()->parse($this->source_folder_and_file_name);
+            $results = $this->getYmlParser()->parse($this->getBaseFixtureStoragePath() . $this->getName());
             $this->setContentArray($results);
             return $this;
         } catch(\Exception $e)

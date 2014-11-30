@@ -13,6 +13,7 @@ class BaseParser {
      * @var \Symfony\Component\Yaml\Yaml
      */
     protected $yaml_parser;
+    protected $base_fixture_storage_path;
 
     /**
      * @var Filesystem
@@ -95,6 +96,20 @@ class BaseParser {
     {
         $this->content = $content;
         return $this;
+    }
+
+    public function setBaseFixtureStoragePath($path)
+    {
+        $this->base_fixture_storage_path = $path;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBaseFixtureStoragePath()
+    {
+        return $this->base_fixture_storage_path;
     }
 
 
