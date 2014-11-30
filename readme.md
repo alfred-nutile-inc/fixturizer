@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alfred-nutile-inc/fixturizer.svg?branch=master)](https://travis-ci.org/alfred-nutile-inc/fixturizer)
+
 # Fixturizer 
 
 Quick way to write and read fixture data. 
