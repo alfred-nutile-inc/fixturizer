@@ -48,7 +48,7 @@ Then you can use it as seen below in a test file
         /**
          * @test
          */
-        public function should_use_fixture()
+        public function should_write_fixture()
         {
             $fixture = ['foo' => 'bar'];
             FixturizerWriter::createFixture($fixture, 'foo.yml');
