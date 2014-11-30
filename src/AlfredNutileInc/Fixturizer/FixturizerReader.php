@@ -11,14 +11,12 @@ namespace AlfredNutileInc\Fixturizer;
 
 use Illuminate\Support\Facades\Facade;
 
-class FixturizeWriter extends Facade {
+class FixturizerReader extends Facade {
 
     /**
      * Get the registered name of the component.
      *
      * @return string
      */
-    protected static function getFacadeAccessor() {
-        return 'fixturize.writer';
-    }
+    protected static function getFacadeAccessor() { return 'fixturize.reader'; }
 } 
