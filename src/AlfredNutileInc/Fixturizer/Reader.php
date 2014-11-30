@@ -9,6 +9,8 @@
 namespace AlfredNutileInc\Fixturizer;
 
 
+use Illuminate\Support\Facades\Log;
+
 class Reader extends BaseParser {
 
     protected $content_array;
@@ -37,7 +39,8 @@ class Reader extends BaseParser {
 
         try
         {
-            $results = $this->getYmlParser()->parse($this->getBaseFixtureStoragePath() . $this->getName());
+            $content = file_get_contents($this->getBaseFixtureStoragePath() . $this->getName());
+            $results = $this->getYmlParser()->parse($content);
             $this->setContentArray($results);
             return $this;
         } catch(\Exception $e)
