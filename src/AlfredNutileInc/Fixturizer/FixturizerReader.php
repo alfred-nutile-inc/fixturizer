@@ -15,7 +15,7 @@ class FixturizerReader extends Facade {
 
     /**
      * Get the registered name of the component.
-     *
+     * @see \AlfredNutileInc\Fixturizer\Reader
      * @return string
      */
     protected static function getFacadeAccessor() { return 'fixturize.reader'; }
