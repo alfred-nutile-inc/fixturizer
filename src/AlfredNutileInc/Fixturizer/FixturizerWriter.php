@@ -16,7 +16,7 @@ class FixturizerWriter extends Facade {
     /**
      * Get the registered name of the component.
      *
-     * @see Writer
+     * @see AlfredNutileInc\Fixturizer\Writer
      * @return string
      */
     protected static function getFacadeAccessor() {
