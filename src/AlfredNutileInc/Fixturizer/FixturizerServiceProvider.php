@@ -32,7 +32,7 @@ class FixturizerServiceProvider extends ServiceProvider {
 		$this->app->bind('fixturize.writer', function($app, $name) {
             
             $fixturize = new Writer(new Filesystem());
-            $path = Config::get('fixturizer::config.fixture_storage_folder');
+            $path = Config::get('fixturizer.fixture_storage_folder');
             $fixturize->setDestination($path . '/');
             $fixturize->setYmlParser(new Yaml());
             return $fixturize;
