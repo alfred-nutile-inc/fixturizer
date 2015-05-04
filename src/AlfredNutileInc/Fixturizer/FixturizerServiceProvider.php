@@ -19,7 +19,7 @@ class FixturizerServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('alfred-nutile-inc/fixturizer');
+
     }
 
 	/**
@@ -43,6 +43,10 @@ class FixturizerServiceProvider extends ServiceProvider {
             $fixturize->setYmlParser(new Yaml());
             return $fixturize;
         });
+
+        $this->publishes([
+            __DIR__ . '/../config/config.php', config_path('fixturizer.php')
+        ]);
 	}
 
 	/**

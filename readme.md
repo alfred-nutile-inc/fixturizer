@@ -15,7 +15,8 @@ The main goal being that Writer or Reader allow you to easily pass a filename
 and path to get or put the file / fixture data in yml format.
 
 
-## If you are using Laravel
+## If you are using Laravel 5.x
+
 
 Load up the Provider and Facades
 
@@ -33,6 +34,13 @@ Load under Facades
     'FixturizerReader' => 'AlfredNutileInc\Fixturizer\FixturizerReader',
     'FixturizerWriter' => 'AlfredNutileInc\Fixturizer\FixturizerWriter',
 ~~~
+
+The default folder is tests/fixtures but you can modify this by running
+
+~~~
+php artisan vendor:publish --provider="AlfredNutileInc\Fixturizer\FixturizerServiceProvider"
+~~~
+
 
 Then you can use it as seen below in a test file
 

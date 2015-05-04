@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cacb54ad-2851-4f06-a9ba-e17da9c5ca53" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AlfredNutileInc/Fixturizer/FixturizerServiceProvider.php" afterPath="$PROJECT_DIR$/src/AlfredNutileInc/Fixturizer/FixturizerServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fixturizer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FixturizerTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/FixturizerTest.php">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1290323">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2890511">
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -42,6 +44,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/AlfredNutileInc/Fixturizer/FixturizerServiceProvider.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -51,6 +55,9 @@
   </component>
   <component name="NamedScopeManager">
     <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -83,6 +90,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -115,9 +123,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixturizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixturizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixturizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixturizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlfredNutileInc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fixturizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,6 +177,9 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cacb54ad-2851-4f06-a9ba-e17da9c5ca53" name="Default" comment="" />
@@ -143,17 +193,25 @@
     <frame x="985" y="23" width="1527" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32940406" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32940406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -167,23 +225,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18924731">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;alfred-nutile-inc/fixturizer&quot;...}" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;Alfred Nutile, Inc&quot;...}" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{&quot;php&quot;: &quot;&gt;=5.4.0&quot;...}" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{&quot;phpunit/phpunit&quot;: &quot;~4.0&quot;...}" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{&quot;AlfredNutileInc\\Fixturizer&quot;: &quot;src/&quot;...}" />
-            <marker date="1430734313000" expanded="true" signature="-1:-1" placeholder="{&quot;bin-dir&quot;: &quot;bin/&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/FixturizerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1290323">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1430734144000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @test ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @test ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @test ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @test ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @expectedException \AlfredNutileInc\Fixturizer\MissingFileException ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @expectedException \AlfredNutileInc\Fixturizer\MissingFileException ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AlfredNutileInc/Fixturizer/Writer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1430734144000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder=" @return mixed ..." />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.063082434">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <marker date="1430734144000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AlfredNutileInc/Fixturizer/FixturizerServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6781362">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <marker date="1430734606000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder=" Indicates if loading of the provider is deferred. ..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder=" Booting ..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder=" Register the service provider. ..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder=" Get the services provided by the provider. ..." />
+            <marker date="1430734606000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2890511">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
           <folding />
         </state>
       </provider>
