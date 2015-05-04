@@ -10,7 +10,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "*",
-        "symfony/yaml": "< 2.7",
+        "symfony/yaml": "dev-master",
         "symfony/filesystem": "*"
     },
     "require-dev": {
